@@ -3,8 +3,7 @@ import { RoutesPath } from '../share/constants';
 
 @Component({
   selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.scss']
+  templateUrl: './nav.component.html'
 })
 export class NavComponent implements OnInit {
   public Routes = RoutesPath;

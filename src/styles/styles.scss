@@ -1,8 +1,23 @@
-body {
+@import "~bootstrap/scss/_functions.scss";
+@import 'node_modules/bootstrap/scss/_variables.scss';
+
+body, pre {
     background-color: black;
     color: white;
-    font-size: 12px;
+    font-size: 1em;
     font-family: 'Open Sans', sans-serif;
+}
+
+pre {
+    & {
+        margin-left: 20px;
+    }
+
+    white-space: pre-line;       /* Since CSS 2.1 */
+    white-space: -moz-pre-line;  /* Mozilla, since 1999 */
+    white-space: -pre-line;      /* Opera 4-6 */
+    white-space: -o-pre-line;    /* Opera 7 */
+    word-wrap: break-word;    
 }
 
 .vertical-center {
@@ -11,7 +26,54 @@ body {
     justify-content: center;
 }
 
-.title {
-    font-size: 24px;
+
+/* LINKS & BUTTONS */
+.link {
+    color: $gray-500;
+    text-decoration: none;
+}
+.link:hover {
+    color: $gray-800;
+    text-decoration: none;
+}
+
+.main-link {
+    color: white;
     text-align: center;
+    font-size: 1.7em;
+}
+.secondary-link {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+/* TEXT*/
+.main-title, .title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: 2.5em;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.subtitle {
+    color: $gray-800;
+    font-size: 1.7em;
+    margin: 20px 0;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    color: $gray-500;
+    font-size: 1.2em;
+}
+
+.coloured {
+    color: $gray-700;
 }
