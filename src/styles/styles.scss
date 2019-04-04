@@ -85,3 +85,13 @@ pre {
 .coloured {
     color: $gray-700;
 }
+
+/* MISC */
+
+.svg-icon {
+    fill: $gray-300;
+    margin: auto;
+    svg {
+        width: 400px;
+    }
+}
